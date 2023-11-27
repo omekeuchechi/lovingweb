@@ -1,0 +1,11 @@
+{
+	"folders": [
+		{
+			"name": "colorfull",
+			"path": "../.."
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "colorfull"
+	}
+}
