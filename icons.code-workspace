@@ -1,0 +1,16 @@
+{
+	"folders": [
+		{
+			"name": "icons",
+			"path": "../icons"
+		},
+		{
+			"name": "colorfull",
+			"path": "."
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "colorfull",
+		"liveServer.settings.port": 5501
+	}
+}
