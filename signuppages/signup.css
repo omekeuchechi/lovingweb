@@ -1,0 +1,210 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  /* background: #2E4362; */
+  background-image: url(grk/screenshot.jpg);
+  background-size: cover;
+  backdrop-filter: blur(6px);
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+/* LOGIN CONTAINER  */
+
+.container {
+  /*background-color: #fff;
+  */background: rgba(255, 255, 255, 0.8);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(25px);
+  -webkit-backdrop-filter: blur(25px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+  width: 400px;
+  max-width: 100%;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+
+/* HEADER  */
+
+.header {
+  /*background-color: #F5F9FF;
+  */border-radius: 1px solid #f0f0f0;
+  padding: 20px 40px 0;
+  text-align: center;
+  animation: title 1s ease 0s 1 normal forwards;
+  -webkit-border-radius: 1px solid #f0f0f0;
+  -moz-border-radius: 1px solid #f0f0f0;
+  -ms-border-radius: 1px solid #f0f0f0;
+  -o-border-radius: 1px solid #f0f0f0;
+  -webkit-animation: title 1s ease 0s 1 normal forwards;
+}
+
+@keyframes title {
+  0% {
+    letter-spacing: 10px;
+    color: #f5f9ff;
+  }
+
+  100% {
+    letter-spacing: 1px;
+    color: #2b5175;
+  }
+}
+
+/* FORM  */
+
+.form {
+  padding: 30px 40px 20px;
+}
+
+.form-control {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.form-control label {
+  display: inline-block;
+  margin-bottom: 5px;
+  color: #2b5175;
+  font-size: 0.9rem;
+}
+
+.form-control input {
+  border: transparent;
+  background: transparent;
+  outline: 2px dotted #f0f0f0;
+  border-radius: 4px;
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 5px;
+  font-size: 0.8rem;
+  font-family: inherit;
+  transition: all 0.4s ease-in;
+}
+
+input:focus {
+  border: transparent;
+  outline: 2px dotted #2b5175;
+}
+
+.form-control.success input {
+  /* border-color: #2ecc71; */
+  outline: 2px dotted #2ecc71;
+}
+
+.form-control.error input {
+  /* border-color: #e74c3c; */
+  outline: 2px dotted #8b2e31;
+}
+
+.form-control i {
+  position: absolute;
+  top: 37px;
+  right: 10px;
+  visibility: hidden;
+}
+
+.form-control.success i.fa-check-circle {
+  visibility: visible;
+  color: #2ecc71;
+}
+
+.form-control.error i.fa-exclamation-circle {
+  visibility: visible;
+  color: #e74c3c;
+}
+
+.form-control small {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  visibility: hidden;
+}
+
+.form-control.error small {
+  visibility: visible;
+  color: #8b2e31;
+}
+
+/* SUBMIT BUTTON  */
+
+.form button {
+  display: block;
+  background-image: linear-gradient(
+    to right,
+    #5c258d 0%,
+    #4389a2 51%,
+    #5c258d 100%
+  );
+  background-size: 200% auto;
+  color: #fff;
+  width: 100%;
+  padding: 15px 45px;
+  margin: 30px 0 10px;
+  font-size: 16px;
+  font-family: inherit;
+  text-align: center;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0 0 20px #eee;
+  cursor: pointer;
+  transition: all 0.5s linear;
+}
+
+.form button:hover {
+  background-position: right center;
+  color: #fff;
+  text-decoration: none;
+}
+
+/* MESSAGE AFTER SUBMITTING  */
+
+.message {
+  padding: 30px;
+  font-size: 2rem;
+  font-weight: 600;
+  color: #4389a2;
+  text-align: center;
+  text-transform: uppercase;
+  animation: fade-in 1.5s ease-in-out forwards alternate;
+  -webkit-animation: fade-in 1.5s ease-in-out forwards alternate;
+}
+
+.hidden {
+  display: none;
+}
+
+@keyframes fade-in {
+  from {
+    transform: rotate(0deg) scale(0) skew(0deg) translateY(30px);
+  }
+  to {
+    transform: rotate(0deg) scale(1) skew(0deg) translateY(0);
+  }
+}
+
+@-webkit-keyframes fade-in {
+  from {
+    -webkit-transform: rotate(0deg) scale(0) skew(0deg) translateY(30px);
+  }
+  to {
+    -webkit-transform: rotate(0deg) scale(1) skew(0deg) translateY(0);
+  }
+}

@@ -2,7 +2,7 @@
     box-sizing: border-box;
 }
 
-body{
+html, body{
     padding: 0;
     margin: 0;
 }
@@ -36,6 +36,10 @@ header > div > ul > li > a{
     border-radius: 6vh;
     font-weight: bolder;
     margin-bottom: 100px;
+    -webkit-border-radius: 6vh;
+    -moz-border-radius: 6vh;
+    -ms-border-radius: 6vh;
+    -o-border-radius: 6vh;
 }
 
 .nav-bar > ul > li > a:hover{

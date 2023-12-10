@@ -1,0 +1,71 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    /*background-image: url(AGK/images.jpg);*/
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  /*  background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;*/
+    background-color: aqua;
+}
+
+.login{
+    width: 390px;
+    overflow: hidden;
+    margin: 20 0 0 460px;
+    padding: 80px;
+    background: rgba(10, 10, 255, 0.481);
+    border-radius: 16px;
+    margin: auto;
+    -webkit-border-radius: 16px;
+    -moz-border-radius: 16px;
+    -ms-border-radius: 16px;
+    -o-border-radius: 16px;
+}
+
+h2{
+    text-align: center;
+    color: chartreuse;
+    padding: 21px;
+}
+
+label{
+    color: chartreuse;
+    font-size: 18px;
+}
+
+#uname{
+    width: 300px;
+    height: 32px;
+    border: none;
+    border-radius: 18px;
+    padding-left: 8px;
+    -webkit-border-radius: 18px;
+    -moz-border-radius: 18px;
+    -ms-border-radius: 18px;
+    -o-border-radius: 18px;
+}
+
+#pass{
+    width: 300px;
+    height: 34px;
+    border: none;
+    border-radius: 18px;
+    padding-left: 8px;
+    color: chartreuse;
+}
+
+a{
+    float: right;
+    background-color: grey;
+}
+#log{
+    border-radius: 22px;
+    border-style: solid;
+    color: chartreuse;
+    border-color: chartreuse;
+}
