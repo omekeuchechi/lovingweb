@@ -96,6 +96,14 @@ body {
   font-size: 0.8rem;
   font-family: inherit;
   transition: all 0.4s ease-in;
+  -webkit-transition: all 0.4s ease-in;
+  -moz-transition: all 0.4s ease-in;
+  -ms-transition: all 0.4s ease-in;
+  -o-transition: all 0.4s ease-in;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
 }
 
 input:focus {
@@ -146,12 +154,7 @@ input:focus {
 
 .form button {
   display: block;
-  background-image: linear-gradient(
-    to right,
-    #5c258d 0%,
-    #4389a2 51%,
-    #5c258d 100%
-  );
+  background-image: linear-gradient(    to right,    #5c258d 0%,    #4389a2 51%,    #5c258d 100%  );
   background-size: 200% auto;
   color: #fff;
   width: 100%;
@@ -166,6 +169,14 @@ input:focus {
   box-shadow: 0 0 20px #eee;
   cursor: pointer;
   transition: all 0.5s linear;
+  -webkit-transition: all 0.5s linear;
+  -moz-transition: all 0.5s linear;
+  -ms-transition: all 0.5s linear;
+  -o-transition: all 0.5s linear;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
 }
 
 .form button:hover {
@@ -194,10 +205,18 @@ input:focus {
 @keyframes fade-in {
   from {
     transform: rotate(0deg) scale(0) skew(0deg) translateY(30px);
-  }
+    -webkit-transform: rotate(0deg) scale(0) skew(0deg) translateY(30px);
+    -moz-transform: rotate(0deg) scale(0) skew(0deg) translateY(30px);
+    -ms-transform: rotate(0deg) scale(0) skew(0deg) translateY(30px);
+    -o-transform: rotate(0deg) scale(0) skew(0deg) translateY(30px);
+}
   to {
     transform: rotate(0deg) scale(1) skew(0deg) translateY(0);
-  }
+    -webkit-transform: rotate(0deg) scale(1) skew(0deg) translateY(0);
+    -moz-transform: rotate(0deg) scale(1) skew(0deg) translateY(0);
+    -ms-transform: rotate(0deg) scale(1) skew(0deg) translateY(0);
+    -o-transform: rotate(0deg) scale(1) skew(0deg) translateY(0);
+}
 }
 
 @-webkit-keyframes fade-in {
@@ -208,3 +227,4 @@ input:focus {
     -webkit-transform: rotate(0deg) scale(1) skew(0deg) translateY(0);
   }
 }
+

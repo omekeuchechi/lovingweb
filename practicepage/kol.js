@@ -1,3 +1,8 @@
+
+const { JSDOM } = require( "jsdom" );
+const { window } = new JSDOM( "" );
+const $ = require( "jquery" )( window );
+
 function insertValue(value) {
     result.value += value;
   }
@@ -26,3 +31,9 @@ let fahrenheit = celsius * (9 / 5) + 32;
 fahrenheit = Math.floor(fahrenheit);
 console.log(`the temperature is ${fahrenheit}
 degrees fahrenheit.`)
+
+$(function(){
+  $("p").click (function(){
+    $(this).hide();
+  });
+});

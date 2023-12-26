@@ -71,3 +71,69 @@ footer{
     -o-border-radius: 100px;
     width: 30px;
 }
+@media(min-width:789px){
+    
+header{
+    background-image: url(oke/amsterdam-2.jpg);
+    width: 220vh;
+    height: 100vh;
+}
+
+footer{
+    height: 40vh;
+    width: fit-content;
+}
+
+.content{
+    display: flex;
+}
+
+.content > div{
+    width: fit-content;
+    font-size: larger;
+    font-family: Impact, 'Arial Narrow Bold', sans-serif;
+    font-stretch: extra-expanded;
+    padding: 30px;
+}
+
+.content > div::first-line{
+    color: red;
+    font-style: italic;
+}
+
+.content > div::first-letter{
+    font-size: x-large;
+    font-family: 'Gill Sans', 'Trebuchet MS', sans-serif;
+}
+
+.content > div:hover::first-line{
+    text-shadow: 0.5px 0.7px 1px  red;
+}
+
+.person-1{
+    border-radius: 100px;
+    -webkit-border-radius: 100px;
+    width: 30px;
+    -moz-border-radius: 100px;
+    -ms-border-radius: 100px;
+    -o-border-radius: 100px;
+}
+
+.person-2{
+    border-radius: 100px;
+    -webkit-border-radius: 100px;
+    width: 20px;
+    -moz-border-radius: 100px;
+    -ms-border-radius: 100px;
+    -o-border-radius: 100px;
+}
+
+.yoga{
+    border-radius: 100px;
+    -webkit-border-radius: 100px;
+    -moz-border-radius: 100px;
+    -ms-border-radius: 100px;
+    -o-border-radius: 100px;
+    width: 15px;
+}
+}
